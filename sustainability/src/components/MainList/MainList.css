@@ -1,0 +1,56 @@
+.addBtn {
+  float: right;
+  right: 5%;
+  font-size: xx-large;
+
+}
+
+.good {
+  color: rgb(152, 208, 58);
+  
+}
+
+.almost {
+  color: rgb(255, 135, 37);
+}
+
+.spoiled{
+    color:#ff576d;
+}
+
+.boxes {
+    align-self: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.name{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family: 'Palatino Linotype', serif;
+}
+
+.days {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+}
+.throw {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.starting {
+    padding-top: 50px;
+    
+}
+
+h4 {
+    margin-left: 95px;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;
+}
