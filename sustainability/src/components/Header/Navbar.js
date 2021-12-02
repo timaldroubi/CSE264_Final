@@ -12,7 +12,7 @@ function Navbar() {
           <a href="/">Home</a>
           <a href="/Login">Login</a>
           <a href="/CreateAccount">Create Account</a>
-          <a href="/AboutUs">About Us</a>
+          <a href="/Premium">Premium</a>
           <a href="/Demo">Demo</a>
 
 

@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs/AboutUs'
 import Demo from './components/Demo/Demo'
 import Login from './components/Login/Login'
 import ShoppingList from './components/ShoppingList/ShoppingList'
+import Premium from './components/Premium/Premium'
 import Add from './components/AddButton/Add'
 const mongoose = require('mongoose');
 
@@ -64,6 +65,7 @@ const App = () => {
 						<Route exact path="/Add" component={Add} />
 						<Route exact path="/ShoppingList" component={ShoppingList} />
 						<Route exact path="/Login" component={Login} />
+						<Route exact path="/Premium" component={Premium} />
 
 					</Switch>
 				</Router>
