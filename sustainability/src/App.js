@@ -9,8 +9,24 @@ import Login from './components/Login/Login'
 import ShoppingList from './components/ShoppingList/ShoppingList'
 import Premium from './components/Premium/Premium'
 import Add from './components/AddButton/Add'
+const mongoose = require('mongoose');
+
+
+
+
 
 const App = () => {
+
+	console.log("my env is ", process.env.MONGODB_URI)
+	mongoose.Promise = global.Promise;
+
+	mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+	mongoose.connection.on('error', (err) => {
+	console.error(err);
+	console.log('%s MongoDB connection error. Please make sure MongoDB is running.');
+	process.exit();
+	});
+
 	const [isPopup, togglePopup] = useState(() => {
 		if (document.cookie === "popup=false") {
 			return false;
