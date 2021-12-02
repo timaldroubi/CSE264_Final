@@ -1,56 +1,50 @@
 import React from 'react'
 import './Login.css';
 
-
 function Login() {
-  const handleSubmit = (e) => {  
-    <a href="/" style="text-decoration:none">Home</a>
-    e.preventDefault();
-  }
-
   return (
-   
-    <div className="container">
 
-      <h2>Login</h2>
-      <form class="login_form" onSubmit={handleSubmit}>
-        <div class="font">
-          <label>Username:</label>
-          <input
-            type="text"
-            required
-          />
-        </div>
+    <div class="container">
+        <h1 class="label">Login</h1>
 
-        <div class="font">
-        <label>Password: </label>
-        <input
-          type="password"
-          required
-        />          
-        </div>
-        
-        <div>
-        <label>Account Type:</label>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+      <div class="font">Username</div>
 
-        <select>
-          <option value="free">free</option>
-          <option value="premium">premium</option>
-        </select>
-        </div>
+      <input autocomplete="off" type="text" name="username" required/>
+      <div id="username_error">Please create a Username</div>
+			<div class="font font2">Password</div>
 
-       
-        <button onclick="myFunction()"><a href="/">Login</a></button>
-        
+			<input type="password" name="password" required/>
+			<div id="pass_error">Please create a Password</div>
+
+
+      {/** <div><input type="radio" value ="Free" name="role" /> Free</div>
+       <div><input type="radio" value ="Premium" name="role" /> Premium</div>*/}
+
+
+
+
+		</form>
+
+      <form >
+        <label class="radio-inline">
+          <input type="radio" name="optradio" checked />Free
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="optradio" />Premium
+        </label>
+
       </form>
 
-<script src="valid.js"></script>
-<script>
-  alert('this is an alert');
-</script>
+			<button class="login_form" type="submit">Login</button>
 
-    </div>
+
     
+        <script src="valid.js"></script>
+
+	  </div>	
+    
+
   )
 }
 
