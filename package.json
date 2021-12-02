@@ -17,7 +17,8 @@
     "react-native-vector-icons": "^8.1.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "^4.0.3",
-    "react-window": "^1.8.6"
+    "react-window": "^1.8.6",
+    "node": "14.17.6"
   },
   "scripts": {
     "start": "react-scripts start",
