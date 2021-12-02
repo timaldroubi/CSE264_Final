@@ -1,3 +1,6 @@
+a {
+	text-decoration: none;
+}
 
 .container{
 	position: relative;
@@ -5,7 +8,7 @@
 	margin-top: 200px; /* to center login vertically */
 	width: 450px;
 	height: auto;
-	background: #dedede;
+	background: #f0d3ff;
 	border-radius: 5px;
 }
 .label{
@@ -42,14 +45,19 @@
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
-	background: #1A237E;
+	background: #9d34ff;
 	border-radius: 3px;
 	border: 1px solid #3949AB;
-	transition: .5s;
 }
 .login_form button:hover{
-	background: #151c6a;
+	background: #e37ef7;
+	transition: .1s;
 }
+
+.login_form button:active{
+	background: #69ee7a;
+}
+
 .login_form #username_error,
 .login_form #pass_error{
 	margin-top: 5px;
